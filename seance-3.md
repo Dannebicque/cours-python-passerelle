@@ -1,43 +1,174 @@
----
-description: Cette séance sera consacré à une évaluation pratique.
----
+# Le jeu du pendu
 
-# Séance 3
+L’ordinateur choisit un mot au hasard dans une liste, un mot de dix lettres maximum. Le joueur doit trouver les lettres composant le mot.
 
-{% hint style="danger" %}
-Pour chacun des exercices ci-dessous, vous devez écrire le code en python, et le faire valider. En l'absence de validation, vous aurez 0.
-{% endhint %}
+* À chaque coup, il saisit une lettre.
+* Si la lettre figure dans le mot, l’ordinateur affiche le mot avec les lettres déjà trouvées.&#x20;
+* Celles qui ne le sont pas encore sont remplacées par des barres (\_).
+* Le joueur a 6 chances. Au delà, il a perdu.
 
-## Exercice 1 (2 points)
+### Les listes
 
-Ecrire un programme qui en fonction d'une valeur saisie par l'utilisateur indiquer si un nombre est un multiple de 5 (le reste de la division du nombre par 5 est égal à 0).
+Dans cet exercice, nous allons avoir besoin d'une nouvelle forme de variable : les listes. Les listes sont très utilisés en programmation (on parle souvent aussi de tableaux), car elles permettent de sauvegarder plusieurs éléments dans une seule variable. Les listes peuvent être à une dimension (on va dire une colonne), à deux dimensions (un carré... comme Excel), ou à n dimension !
 
-## Exercice 2 (2 points)
+En python (et dans beaucoup de langage d'ailleurs), les tableaux s'écrivent de la manière suivante :&#x20;
 
-Une année est bissextile si elle est divisible par 4 mais non divisible par 100. les années divisibles par 400 sont également bissextile.
+```python
+montableau = ["element1", "element2", "element3", "...", "element n"]
+```
 
-Etre divisible par, signifie que le reste de la division est égal à 0.
+Pour accéder à un élément d'une liste, on y va en indiquant sa position. Selon les langages la première valeur d'un tableau est à la position 0 ou à la position 1. **Très souvent, c'est la position 0, comme ici en python**.
 
-Ecrire un programme qui demande à l'utilisateur une année, et qui vérifie si elle est bissextile.
+```python
+print(montableau[0]) //affichera element1
+print(montableau[2]) //affichera element2
+```
 
-Exemple d'année bissextile 2000, 2004, 2008, 2012 ...
+Il est possible de connaître la taille d'une liste : &#x20;
 
-## Exercice 3 (3 points)
+```python
+montableau.size() //donne la taille du tableau/liste montableau
+```
 
-Ecrire un programme qui demande à l'utilisateur de saisir un mot de 6 caractères minimum, et qui continue tant que ce n'est pas le cas.
+#### Exercice
 
-## Exercice 4 (3 points)
+Soit la liste suivante
 
-Ecrire un programme qui demande à l'utilisateur de saisir un prix hors taxe, et qui affiche le prix TTC (TVA à 19.6%). L'utilisateur doit saisir 0 pour arrêter de saisir un nombre.
+```python
+formations = ["MMI", "TC", "GEA", "CJ", "GEII", "GMP"]
+```
 
-## Exercice 5 (5 points)
+Ecrire un algorigramme qui affiche l'ensemble des valeurs du tableau. Le coder en python.
 
-Ecrire un programme qui demande à l'utilisateur une chaîne de caractères et qui affiche le résultat à l'envers (exemple : Saisir "Bonjour" et afficher "ruojnoB")
+### Manipuler les listes
 
-Pour rappel, on peut accéder à un caractère précis avec la notation `mot[2]` (pour accéder au caractère 3 de la variable mot)
+Il est également assez facile en python de créer une liste avec n fois un caractère. Essayez le code suivant :&#x20;
 
-## Exercice 6 (5 points)
+```python
+liste = "a" * 8
 
-Ecrire un programme qui "simule" une calculatrice. Le programme va demander deux nombres à l'utilisateur. Puis l'opération qu'il souhaite réaliser (on peut par exemple demander de saisir 1 pour une addition, 2 pour une soustraction, ...).
+print(liste)
+```
 
-Afficher l'opération, puis son résultat. Demander à l'utilisateur s'il souhaite effectuer une autre opération.
+Grâce à l'instruction "join" on peut même formatter rapidement une liste, en insérant par exemple un caractère entre chaque élément de la liste. Essayez le code suivant :&#x20;
+
+```python
+liste = "a" * 8
+print(liste)
+
+resultat = ', '.join(liste)
+print(resultat)
+
+```
+
+#### Exercice
+
+Ecrire un programme qui génère une liste de "\_" en fonction de la taille d'un mot. La taille d'un mot se trouve avec l'instruction len (exemple : `taille = len(monmot)`).
+
+Exemple, si le mot est "chat", je veux avoir à l'écran `_ _ _ _`
+
+### Savoir si une lettre est dans un mot
+
+En python, pour savoir si quelque chose est dans un tableau, on peut utiliser l'instruction `in`. Et par chance (et comme dans quasiment tous les langages de programmation), une chaîne de caractère (du texte), c'est un tableau !
+
+Essayez le programme ci-dessous :&#x20;
+
+```python
+mot = "Bonjour"
+print(mot[2])
+//affichera n (le troisième caractère, puisque le tableau commence à 0)
+```
+
+Maintenant essayez le code ci-dessous :&#x20;
+
+```python
+mot = "Bonjour"
+
+if "e" in mot:
+    print("Le e est dans le mot")
+else:
+    print ("non, pas de e")
+```
+
+#### Exercice
+
+Modifiez le programme précédent pour que :&#x20;
+
+* Ce ne soit pas toujours la lettre "e" mais une lettre saisie par l'utilisateur
+* Ce ne soit pas toujours le mot "Bonjour", mais un mot saisi par l'utilisateur
+
+### Savoir où se trouve la lettre
+
+Avec les exemples précédents, on sait maintenant que la lettre est dans le tableau, mais on ne sait pas où. Pour cela, en python, on peut utiliser `index`. Essayer le code ci-dessous.
+
+```python
+mot = "Bonjour"
+
+print(mot.index("j"))
+
+//doit afficher 3, qui est la position de "j" en partant de 0
+```
+
+#### Exercice
+
+Modifiez le code précédent, pour dire si la lettre est dans le mot, mais aussi sa position.
+
+### Transformer une chaîne de caractères en liste
+
+Même si une chaîne de caractères ressemble beaucoup à une liste (on peut accéder à un élément précis avec son indice), ce n'est pas une liste au sens de python, et on ne peut donc pas tout faire. Pour transformer une chaîne en liste, on peut utiliser l'instruction "`list`". Essayer le code ci-dessous :&#x20;
+
+```python
+mot = "Bonjour"
+
+listemot = list(mot)
+
+print(", ".join(listemot))
+```
+
+### Effacer un élément d'une liste
+
+L'instruction pop permet de retirer un élément d'une liste. Testez l'exemple ci-dessous :&#x20;
+
+```python
+liste = ["a", "b","c", "d", "e","f"]
+
+print(", ".join(liste))
+
+liste.pop(2)
+
+print(", ".join(liste))
+```
+
+### Ajouter un élément dans une liste
+
+L'instruction insert permet d'ajouter un élément à une position définie.
+
+```python
+liste = ["a", "b","c", "d", "e","f"]
+
+print(", ".join(liste))
+
+liste.insert(2, "z")
+
+print(", ".join(liste))
+```
+
+#### Exercice
+
+Ecrire un programme qui supprime la lettre saisie par l'utilisateur d'un mot. Que se passe-t-il si la lettre est présente plusieurs fois dans le mot ?
+
+Ecrire un programme qui remplace une lettre par une autre. L'utilisateur indique la lettre à remplacer, et indique également la nouvelle lettre.
+
+### On se lance...
+
+Vous avez maintenant tous les éléments nécessaire pour essayer de faire fonctionner votre jeu du pendu...
+
+Voici quelques étapes :&#x20;
+
+1. Choisir un mot parmi les mots disponible
+2. Initialiser le nombre de vie, et le mot "vide" (c'est à dire avec aucune lettre de trouvée)
+3. Demander à l'utilisateur de saisir une lettre
+4. Regarder si la lettre est dans le mot
+   1. Si oui, alors trouver sa position, et remplacer dans le mot "vide" par la lettre trouvée
+   2. Si non, retirer une vie
+   3. On recommence tant que l'utilisateur dispose de vies

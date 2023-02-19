@@ -1,5 +1,49 @@
 # Séance 1
 
+## Les tests
+
+Un premier exemple d'un test avec python :
+
+```python
+age = 12
+if age < 18:
+    print("Cette personne est mineure")
+else:
+    print("Cette personne est majeure")
+
+```
+
+Vous noterez que l'instruction print() permet d'afficher quelque chose à l'écran. On peut aussi utiliser la fonction input() pour demander à l'utilisateur de saisir quelque chose. Et modifier le code ci-dessus pour demander l'âge à l'utilisateur.
+
+
+```python
+age = int(input("Quel est votre âge ? "))
+if age < 18:
+    print("Cette personne est mineure")
+else:
+    print("Cette personne est majeure")
+```
+
+## Exercices avec les tests : Le Chifoumi
+
+Le chifoumi est un jeu de mains qui se joue à deux. Chaque joueur choisit entre pierre, feuille et ciseaux. Le gagnant est celui qui a choisi le plus fort des trois.​
+* La pierre bat les ciseaux​
+* La feuille bat la pierre​
+* Les ciseaux battent la feuille​
+* Si les deux joueurs choisissent le même élément, c'est un match nul​
+
+Ecrire un programme qui demande à l'utilisateur de saisir son choix, et qui affiche le résultat du chifoumi. Le deuxième joueur est géré par l'ordinateur​
+* On peut utiliser la fonction random.randint() pour générer un nombre aléatoire entre 0 et 2., et considérer que 0 = pierre, 1 = feuille, 2 = ciseaux.​
+
+```python
+import random
+
+choix = int(input("Choisissez entre pierre (0), feuille (1) ou ciseaux (2) : "))
+choixOrdi = random.randint(0, 2)
+
+... A vous de compléter le code
+```
+
 ## La boucle "pour"
 
 Dans cette boucle particulière on connait le nombre d’itération de notre boucle. On sait que la boucle doit varier entre deux valeurs.​
@@ -51,17 +95,6 @@ Un magasin de reprographie propose les tarifs suivants :​
 
 Ecrire un programme qui affiche le prix en fonction du nombre de copie demandées.​
 
-```python
-nbcopies = int(input("Nombre de copies désiré ? "))
-
-if nbcopies < 50:
-    tarif = nbcopies * 0.15
-else:
-    tarif = nbcopies * 0.10
-
-print("total à payer : " + str(tarif) + " €")
-```
-
 ### Exercice 2
 
 Ecrire un programme qui lance 100 fois une pièce. Calculer le nombre de fois où la pièce est pile et le nombre de fois ou elle est face​.
@@ -78,15 +111,7 @@ import random
 face = 0
 pile = 0
 
-for i in range(100):
-    pileouface = random.randint(0, 1)
-    print(str(pileouface))
-    if pileouface == 0:
-        pile = pile + 1
-    else:
-        face = face + 1
-
-print("Nombre de tirage pile : "+str(pile)+", nombre de tirage face :" + str(face))y
+... Compléter le code
 ```
 
 ### Exercice 3

@@ -7,3 +7,4 @@
 * [Séance 3](<seance-3 (1).md>)
 * [Séance 4](seance-3.md)
 * [Page 1](page-1.md)
+* [Dernière séance](derniere-seance.md)

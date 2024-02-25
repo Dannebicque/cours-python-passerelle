@@ -1,5 +1,9 @@
 # Séance 1
 
+## Les structures de contrôle
+
+Les structures de contrôle permettent de réaliser des traitements conditionnels ou répétitifs.
+
 ## Les tests
 
 Un test est une structure de contrôle qui permet de prendre une décision. On peut comparer deux valeurs, et exécuter un bloc de code si la condition est vraie, et un autre bloc de code si la condition est fausse.​

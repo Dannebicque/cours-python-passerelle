@@ -2,6 +2,8 @@
 
 ## Les tests
 
+Un test est une structure de contrôle qui permet de prendre une décision. On peut comparer deux valeurs, et exécuter un bloc de code si la condition est vraie, et un autre bloc de code si la condition est fausse.​
+
 Un premier exemple d'un test avec python :
 
 ```python
@@ -10,11 +12,9 @@ if age < 18:
     print("Cette personne est mineure")
 else:
     print("Cette personne est majeure")
-
 ```
 
 Vous noterez que l'instruction print() permet d'afficher quelque chose à l'écran. On peut aussi utiliser la fonction input() pour demander à l'utilisateur de saisir quelque chose. Et modifier le code ci-dessus pour demander l'âge à l'utilisateur.
-
 
 ```python
 age = int(input("Quel est votre âge ? "))
@@ -27,12 +27,14 @@ else:
 ## Exercices avec les tests : Le Chifoumi
 
 Le chifoumi est un jeu de mains qui se joue à deux. Chaque joueur choisit entre pierre, feuille et ciseaux. Le gagnant est celui qui a choisi le plus fort des trois.​
+
 * La pierre bat les ciseaux​
 * La feuille bat la pierre​
 * Les ciseaux battent la feuille​
 * Si les deux joueurs choisissent le même élément, c'est un match nul​
 
 Ecrire un programme qui demande à l'utilisateur de saisir son choix, et qui affiche le résultat du chifoumi. Le deuxième joueur est géré par l'ordinateur​
+
 * On peut utiliser la fonction random.randint() pour générer un nombre aléatoire entre 0 et 2., et considérer que 0 = pierre, 1 = feuille, 2 = ciseaux.​
 
 ```python
@@ -46,7 +48,9 @@ choixOrdi = random.randint(0, 2)
 
 ## La boucle "pour"
 
-Dans cette boucle particulière on connait le nombre d’itération de notre boucle. On sait que la boucle doit varier entre deux valeurs.​
+Une boucle est une structure de contrôle qui permet de répéter un bloc de code plusieurs fois.​
+
+La boucle "pour" est une boucle particulière. Elle permet de répéter un bloc de code un nombre de fois déterminé.​
 
 * Elle peut se lire « pour i entre 1 et 10 » alors…​
 * Tant que la variable i est comprise entre 1 et 10 la boucle exécute le traitement « vrai » et augmente automatiquement la boucle de 1 (ou d’un pas défini). Si i est plus grand que 10, alors la boucle s’arrête.​

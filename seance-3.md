@@ -7,7 +7,7 @@ L’ordinateur choisit un mot au hasard dans une liste, un mot de dix lettres ma
 * Celles qui ne le sont pas encore sont remplacées par des barres (\_).
 * Le joueur a 6 chances. Au delà, il a perdu.
 
-### Savoir si une lettre est dans un mot
+## Savoir si une lettre est dans un mot
 
 En python, pour savoir si quelque chose est dans un tableau, on peut utiliser l'instruction `in`. Et par chance (et comme dans quasiment tous les langages de programmation), une chaîne de caractère (du texte), c'est un tableau !
 
@@ -30,14 +30,14 @@ else:
     print ("non, pas de e")
 ```
 
-#### Exercice
+## Exercice
 
 Modifiez le programme précédent pour que :
 
 * Ce ne soit pas toujours la lettre "e" mais une lettre saisie par l'utilisateur
 * Ce ne soit pas toujours le mot "Bonjour", mais un mot saisi par l'utilisateur
 
-### Savoir où se trouve la lettre
+## Savoir où se trouve la lettre
 
 Avec les exemples précédents, on sait maintenant que la lettre est dans le tableau, mais on ne sait pas où. Pour cela, en python, on peut utiliser `index`. Essayer le code ci-dessous.
 
@@ -49,11 +49,11 @@ print(mot.index("j"))
 //doit afficher 3, qui est la position de "j" en partant de 0
 ```
 
-#### Exercice
+## Exercice
 
 Modifiez le code précédent, pour dire si la lettre est dans le mot, mais aussi sa position.
 
-### Transformer une chaîne de caractères en liste
+## Transformer une chaîne de caractères en liste
 
 Même si une chaîne de caractères ressemble beaucoup à une liste (on peut accéder à un élément précis avec son indice), ce n'est pas une liste au sens de python, et on ne peut donc pas tout faire. Pour transformer une chaîne en liste, on peut utiliser l'instruction "`list`". Essayer le code ci-dessous :
 
@@ -65,7 +65,7 @@ listemot = list(mot)
 print(", ".join(listemot))
 ```
 
-### Effacer un élément d'une liste
+## Effacer un élément d'une liste
 
 L'instruction pop permet de retirer un élément d'une liste. Testez l'exemple ci-dessous :
 
@@ -79,7 +79,7 @@ liste.pop(2)
 print(", ".join(liste))
 ```
 
-### Ajouter un élément dans une liste
+## Ajouter un élément dans une liste
 
 L'instruction insert permet d'ajouter un élément à une position définie.
 
@@ -93,13 +93,13 @@ liste.insert(2, "z")
 print(", ".join(liste))
 ```
 
-#### Exercice
+## Exercice
 
 Ecrire un programme qui supprime la lettre saisie par l'utilisateur d'un mot. Que se passe-t-il si la lettre est présente plusieurs fois dans le mot ?
 
 Ecrire un programme qui remplace une lettre par une autre. L'utilisateur indique la lettre à remplacer, et indique également la nouvelle lettre.
 
-### On se lance...
+## On se lance...
 
 Vous avez maintenant tous les éléments nécessaire pour essayer de faire fonctionner votre jeu du pendu...
 

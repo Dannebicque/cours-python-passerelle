@@ -18,6 +18,10 @@ Lien vers un autre cours python avec les principales instructions.
 
 Vous disposez maintenant d'une version de python sur votre poste, permettant de tester des programmes plus complet, et de les sauvegarder.
 
+Ou un outil en ligne
+
+{% embed url="https://www.online-python.com/" %}
+
 ## Quelques concepts de la programmation
 
 ### Les variables
@@ -44,7 +48,7 @@ print("Bonjour")
 
 Afficher une variable
 
-```python 
+```python
 
 a = 5
 

@@ -1,5 +1,11 @@
 # Séance 1
 
+## Exercice
+
+* Demandez à l'utilisateur de saisir son nom et son prénom et afficher un message de bienvenue avec ces éléments
+* Demandez à l'utilisateur deux nombres, et afficher le résultat de la multiplication de ces deux nombres
+* Demandez à l'utilisateur deux nombres, et afficher s'ils sont égaux ou non
+
 ## Les structures de contrôle
 
 Les structures de contrôle permettent de réaliser des traitements conditionnels ou répétitifs.

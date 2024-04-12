@@ -29,7 +29,7 @@ Pour accéder à un élément d'une liste, on y va en indiquant sa position. Sel
 
 ```python
 print(montableau[0]) //affichera element1
-print(montableau[2]) //affichera element2
+print(montableau[2]) //affichera element3
 ```
 
 Il est possible de connaître la taille d'une liste :
@@ -73,3 +73,24 @@ print(resultat)
 Ecrire un programme qui génère une liste de "\_" en fonction de la taille d'un mot. La taille d'un mot se trouve avec l'instruction len (exemple : `taille = len(monmot)`).
 
 Exemple, si le mot est "chat", je veux avoir à l'écran `_ _ _ _`
+
+### Ajouter des éléments dans une liste
+
+Pour ajouter un élément dans une liste python, on peut utiliser la fonction `append`, qui va ajouter un élément en fin de liste
+
+
+
+```python
+liste = [1, 2, 3, 4, 5]
+liste.append(6)
+
+//donner une liste avec les valeurs 1, 2, 3, 4, 5, 6
+```
+
+### Exercice
+
+Demander à l'utilisateur de saisir 5 valeurs, les ajouter dans une liste et afficher cette liste.
+
+### Exercice
+
+Demander à l'utilisateur de saisir 5 valeurs, les ajouter dans une liste et afficher cette liste. Inverser les éléments de cette liste et afficher le résultat.

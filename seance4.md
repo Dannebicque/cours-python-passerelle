@@ -16,7 +16,6 @@ Nous pouvons utiliser le site [repl.it](https://replit.com/), qui permet de cré
 
 ## Utilisation de tkinter
 
-
 ### Initialisation
 
 Pour utiliser tkinter, il faut importer la librairie, et créer une fenêtre principale.
@@ -24,6 +23,8 @@ Pour utiliser tkinter, il faut importer la librairie, et créer une fenêtre pri
 ```python
 from tkinter import *
 ```
+
+Le documentation officielle se trouve ici : [https://tkdocs.com/tutorial/index.html](https://tkdocs.com/tutorial/index.html)
 
 ### Fenetre
 
@@ -220,3 +221,23 @@ fenetre.after(100, fonction)
 ```
 
 Il faut ensuite créer une fonction qui déplace l'objet, et qui appelle la fonction `after` pour se rappeler elle-même.
+
+## Gestion des événements claviers
+
+La librairie tkinter permet de gérer les événements claviers, c'est à dire détecter quand une touche est pressée et laquelle. Pour chaque touche il est ensuite possible de définir une action.
+
+Pour récupérer une touche pressée, il faut utiliser la fonction `bind` :
+
+```python
+fenetre.bind("<Key>", fonction)
+```
+
+La fonction `bind` permet de lier un événement à une fonction. Les paramètres sont l'événement à lier, et la fonction à appeler.
+
+`"<key>"` est l'événement qui correspond à une touche pressée. Par exemple `"<Left>"` correspond à la touche flèche gauche.
+
+Vous trouverez la liste des événements [ici](https://tkinterexamples.com/events/keyboard/).
+
+### Exercice 4
+
+Faire déplacer un carré en utilisant les touches flèches droite et gauche.

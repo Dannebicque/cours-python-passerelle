@@ -67,6 +67,7 @@ largeur = 500
 hauteur = 500
 
 canvas = tk.Canvas(fenetre, width=largeur, height=hauteur, bg='white')
+canvas.pack()
 ```
 
 La fonction Canvas contient les paramètres suivants :
@@ -77,6 +78,8 @@ La fonction Canvas contient les paramètres suivants :
 - bg : la couleur de fond du canvas
 
 La syntaxe avec le `xxx=valeur` permet de préciser le nom des paramètres, ce qui permet de les mettre dans l'ordre que l'on veut.
+
+`pack` permet de placer le canvas dans la fenêtre.
 
 ### Dessiner des formes
 
@@ -89,6 +92,14 @@ canvas.create_line(0, 0, 200, 100)
 La fonction `create_line` permet de dessiner une ligne. Les paramètres sont les coordonnées des points de départ et d'arrivée.
 
 Le point de départ se trouve toujours en haut à gauche de la fenêtre.
+
+Toutes les options de create_line sont [ici](https://tkdocs.com/shipman/create_line.html).
+
+Fair une ligne sur plusieurs lignes :
+
+```python
+canvas.create_line(0, 0, 200, 100, 300, 200, 400, 300)
+```
 
 Il est possible de dessiner d'autres formes, comme des rectangles :
 

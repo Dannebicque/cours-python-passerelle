@@ -215,6 +215,45 @@ Appeler cette fonction avec 3 nombres et afficher les résultats.
 
 Une animation consiste à faire bouger des objets sur l'écran. Pour cela, il faut raffraichir l'écran régulièrement avec la fonction `update`.
 
+```python
+import tkinter as tk
+
+fenetre = tk.Tk()
+fenetre.title("Ma fenêtre")
+
+largeur = 500
+hauteur = 500
+
+canvas = tk.Canvas(fenetre, width=largeur, height=hauteur, bg='white')
+canvas.pack()
+
+balle = canvas.create_oval(10,
+                           10,
+                           50,
+                           50,
+                           outline="red",
+                           width=2,
+                           fill="yellow")
+
+deplacement_y = 1
+
+
+def deplacer_balle():
+  global deplacement_y
+  canvas.move(balle, 0, deplacement_y)
+  position = canvas.coords(balle)
+  print(position)
+  if position[3] >= hauteur or position[3] <=0:
+    deplacement_y = -deplacement_y
+
+  fenetre.after(10, deplacer_balle)
+
+
+deplacer_balle()
+
+fenetre.mainloop()
+```
+
 ### Exercice 3
 
 Faire déplacer un carré ou une boule de la droite vers la gauche au milieu de l'écran.

@@ -20,7 +20,6 @@ La difficulté est donc de trouver la première case vide de la colonne choisie.
 
 Pour cela, nous allons utiliser une liste pour chaque colonne. Chaque élément de la liste correspondra à une case. Si la case est vide, l'élément de la liste sera 0. Si la case est occupée, l'élément de la liste sera la couleur du jeton.
 
-
 ### Détection de la victoire
 
 Nous allons détecter la victoire d'un joueur. Pour cela, nous allons vérifier si 4 jetons de la même couleur sont alignés horizontalement, verticalement ou en diagonale.

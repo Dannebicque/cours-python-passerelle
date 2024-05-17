@@ -130,7 +130,7 @@ def calcul_moyenne(liste):
     for i in liste:
         somme = somme + i
     moyenne = somme / len(liste)
-    return moyenne
+    return moyenne # Ou possible de faire le print directement ici
 
 
 liste = []
@@ -139,6 +139,8 @@ for i in range(3):
     val = int(input("Saisir un nombre ?"))
     liste.append(val)
 
-print("La moyenne des nombres saisis est " + str(calcul_moyenne(liste)))        
+print("La moyenne des nombres saisis est " + str(calcul_moyenne(liste))) 
+# appeler directement la fonction : calcul_moyenne(liste) si le print est dans la fonction
+
 ```
 {% endcode %}

@@ -45,6 +45,26 @@ Initialisez deux entiers : a et b (b > a), saisis par l'utilisateur :
 1. Déterminiez si le nombre a est impair
 2. En partant du premier impair après a, affichez tous les nombres impairs entre a et b
 
+
+
+```python
+# Saisir les valeurs de a et b
+a = int(input("Entrez la valeur de a : "))
+b = int(input("Entrez la valeur de b (b doit être supérieur à a) : "))
+
+# Déterminer si a est impair
+if a % 2 != 0:
+    print(a, " est impair.")
+else:
+    print(a, " est pair.")
+    a += 1
+
+# Afficher tous les nombres impairs entre a et b
+print("Les nombres impairs entre a et b sont :")
+for i in range(a, b, 2):
+    print(i)
+```
+
 ### Exercice 3
 
 Compter les voyelles dans une chaîne de caractères : Écrivez une fonction qui prend une chaîne de caractères en entrée et retourne le nombre de voyelles qu'elle contient.

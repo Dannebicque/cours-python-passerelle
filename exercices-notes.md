@@ -57,7 +57,7 @@ if a % 2 != 0:
     print(a, " est impair.")
 else:
     print(a, " est pair.")
-    a += 1
+    a += 1 # est identique à a = a + 1
 
 # Afficher tous les nombres impairs entre a et b
 print("Les nombres impairs entre a et b sont :")
@@ -71,14 +71,64 @@ Compter les voyelles dans une chaîne de caractères : Écrivez une fonction qui
 
 Exemple d'entrée : "Bonjour" Sortie attendue : 3
 
+
+
+```python
+chaine = input("Entrez une chaîne de caractères : ")
+
+voyelles = 'aeiouAEIOU'
+nombre_de_voyelles = 0
+
+for caractere in chaine:
+    if caractere in voyelles:
+        nombre_de_voyelles += 1
+
+print("Le nombre de voyelles dans la chaîne est : " + str(nombre_de_voyelles))
+```
+
 ### Exercice 4
 
 Écrivez une fonction qui prend une température en degrés Celsius en entrée et la convertit en degrés Fahrenheit en utilisant la formule : F = (C \* 9/5) + 32.
 
 Exemple d'entrée : 20 Sortie attendue : 68.0
 
+
+
+```python
+def celsius_en_fahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+# Exemple d'utilisation
+celsius = float(input("Entrez une température en degrés Celsius : "))
+fahrenheit = celsius_en_fahrenheit(celsius)
+print(str(celsius) + " degrés Celsius est égal à " + str(fahrenheit) + " degrés Fahrenheit.")
+
+```
+
 ### Exercice 5
 
 Nous avons vu les fonctions dans le cadre de Tkinter, serez vous réutiliser le concept ici.
 
 Écrivez une fonction qui prend une liste de nombres en entrée (saisis un par un) et retourne la moyenne de ces nombres.
+
+
+
+```python
+    
+def calcul_moyenne(liste):
+    somme = 0
+    for i in liste:
+        somme = somme + i
+    moyenne = somme / len(liste)
+    return moyenne
+
+
+liste = []
+
+for i in range(3):
+    val = int(input("Saisir un nombre ?"))
+    liste.append(val)
+
+print("La moyenne des nombres saisis est " + str(calcul_moyenne(liste)))        
+```

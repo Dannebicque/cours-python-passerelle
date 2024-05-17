@@ -18,6 +18,7 @@ Pour ces exercices vous pouvez utiliser :
 
 
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import random
 
@@ -37,6 +38,7 @@ for i in range(3):
     
 print("Votre score final est : " + str(score))
 ```
+{% endcode %}
 
 ### Exercice 2
 
@@ -47,6 +49,7 @@ Initialisez deux entiers : a et b (b > a), saisis par l'utilisateur :
 
 
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 # Saisir les valeurs de a et b
 a = int(input("Entrez la valeur de a : "))
@@ -64,6 +67,7 @@ print("Les nombres impairs entre a et b sont :")
 for i in range(a, b, 2):
     print(i)
 ```
+{% endcode %}
 
 ### Exercice 3
 
@@ -73,6 +77,7 @@ Exemple d'entrée : "Bonjour" Sortie attendue : 3
 
 
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 chaine = input("Entrez une chaîne de caractères : ")
 
@@ -85,6 +90,7 @@ for caractere in chaine:
 
 print("Le nombre de voyelles dans la chaîne est : " + str(nombre_de_voyelles))
 ```
+{% endcode %}
 
 ### Exercice 4
 
@@ -94,17 +100,19 @@ Exemple d'entrée : 20 Sortie attendue : 68.0
 
 
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def celsius_en_fahrenheit(celsius):
     fahrenheit = (celsius * 9/5) + 32
     return fahrenheit
 
 # Exemple d'utilisation
-celsius = float(input("Entrez une température en degrés Celsius : "))
+celsius = int(input("Entrez une température en degrés Celsius : ")) # On pourrait mettre float plutôt que int pour saisir des nombres avec une virgule
 fahrenheit = celsius_en_fahrenheit(celsius)
 print(str(celsius) + " degrés Celsius est égal à " + str(fahrenheit) + " degrés Fahrenheit.")
 
 ```
+{% endcode %}
 
 ### Exercice 5
 
@@ -114,6 +122,7 @@ Nous avons vu les fonctions dans le cadre de Tkinter, serez vous réutiliser le 
 
 
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
     
 def calcul_moyenne(liste):
@@ -132,3 +141,4 @@ for i in range(3):
 
 print("La moyenne des nombres saisis est " + str(calcul_moyenne(liste)))        
 ```
+{% endcode %}

@@ -16,6 +16,28 @@ Pour ces exercices vous pouvez utiliser :
 
 Écrire un programme en python pour réviser ses tables de multiplication. Le programme tire 2 entiers au hasard et demande à l'utilisateur le produit. On interrogera 10 fois l'utilisateur. 1 pt par bonne réponse et -1 sinon. Afficher le score.
 
+
+
+```python
+import random
+
+score = 0
+for i in range(3):
+    a = random.randint(1, 10)
+    b = random.randint(1, 10)
+    produit_correct = a * b
+    
+    reponse = int(input("Combien font " + str(a) + " x " + str(b) + " ? "))
+    if reponse == produit_correct:
+        print("Bonne réponse !")
+        score += 1
+    else:
+        print(f"Mauvaise réponse. La bonne réponse était " + str(produit_correct) + ".")
+        score -= 1
+    
+print("Votre score final est : " + str(score))
+```
+
 ### Exercice 2
 
 Initialisez deux entiers : a et b (b > a), saisis par l'utilisateur :

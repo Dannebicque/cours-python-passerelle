@@ -8,3 +8,4 @@
 * [Séance 5](seance5.md)
 * [Correction puissance 4](correction-puissance-4.md)
 * [Exercices notés](exercices-notes.md)
+* [Exercices Notés - 24/05](exercices-notes-24-05.md)

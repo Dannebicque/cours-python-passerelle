@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Exercices Notés - 24/05
 
 ## Exercices notés / Séance du 24 mai

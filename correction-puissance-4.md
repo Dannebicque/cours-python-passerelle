@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Correction puissance 4
 
 

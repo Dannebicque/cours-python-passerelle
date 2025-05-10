@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Exercices notés
 
 ## Exercices évalués

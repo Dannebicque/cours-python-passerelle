@@ -43,6 +43,8 @@ resultat = addition(3, 4)  # 7
 
 ## **Introduction à `turtle`**
 
+[**`https://docs.python.org/3/library/turtle.html`**](https://docs.python.org/3/library/turtle.html)
+
 ```python
 pythonCopierModifierimport turtle  # Importe la bibliothèque turtle
 

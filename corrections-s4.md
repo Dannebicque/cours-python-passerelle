@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Corrections S4
 
 ### **Séance 1 – Corrections**

@@ -13,20 +13,20 @@ Une **fonction** permet de regrouper des instructions qu’on peut **réutiliser
 ### **Définir une fonction :**
 
 ```python
-pythonCopierModifierdef bonjour():
+def bonjour():
     print("Bonjour à tous !")
 ```
 
 ### **Appeler une fonction :**
 
 ```python
-pythonCopierModifierbonjour()  # Affiche : Bonjour à tous !
+bonjour()  # Affiche : Bonjour à tous !
 ```
 
 ### **Fonction avec paramètres :**
 
 ```python
-pythonCopierModifierdef dire_bonjour(prenom):
+def dire_bonjour(prenom):
     print(f"Bonjour {prenom} !")
 
 dire_bonjour("Alice")
@@ -35,7 +35,7 @@ dire_bonjour("Alice")
 ### **Fonction qui retourne une valeur :**
 
 ```python
-pythonCopierModifierdef addition(a, b):
+def addition(a, b):
     return a + b
 
 resultat = addition(3, 4)  # 7
@@ -46,7 +46,7 @@ resultat = addition(3, 4)  # 7
 [**`https://docs.python.org/3/library/turtle.html`**](https://docs.python.org/3/library/turtle.html)
 
 ```python
-pythonCopierModifierimport turtle  # Importe la bibliothèque turtle
+import turtle  # Importe la bibliothèque turtle
 
 t = turtle.Turtle()  # Crée une tortue
 t.forward(100)       # Avance de 100 pixels
@@ -89,7 +89,7 @@ t.left(90)           # Tourne à gauche de 90 degrés
 ### Exemple : polygone régulier
 
 ```python
-pythonCopierModifier# Un carré
+# Un carré
 for _ in range(4):
     t.forward(100)
     t.left(90)
@@ -117,7 +117,7 @@ Un polygone à `n` côtés a un angle de rotation de `360 / n`.
 ### Exemple :
 
 ```python
-pythonCopierModifierdef carre(taille):
+def carre(taille):
     for _ in range(4):
         t.forward(taille)
         t.left(90)
@@ -129,7 +129,7 @@ carre(100)
 ### Fonction avec paramètres :
 
 ```python
-pythonCopierModifierdef etoile(taille, couleur):
+def etoile(taille, couleur):
     t.color(couleur)
     for _ in range(5):
         t.forward(taille)
@@ -182,7 +182,7 @@ y = random.randint(-200, 200)
 ### Événements clavier :
 
 ```python
-pythonCopierModifierdef up():
+def up():
     t.setheading(90)
     t.forward(10)
 

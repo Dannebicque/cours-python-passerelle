@@ -105,7 +105,8 @@ Un polygone à `n` côtés a un angle de rotation de `360 / n`.
 
 1. **Tracer un polygone à `n` côtés** (saisie utilisateur)
 2. **Créer une rosace** : dessiner plusieurs fois un triangle ou carré en tournant
-3. **Défi mandala** : faire une forme complexe avec des boucles imbriquées
+
+<figure><img src=".gitbook/assets/Capture d’écran 2025-05-14 à 14.59.03.png" alt=""><figcaption><p>Exemple d'une rasace avec des triangles</p></figcaption></figure>
 
 ## **Fonctions et réutilisabilité**
 
@@ -167,8 +168,7 @@ y = random.randint(-200, 200)
 
 ### Exercices :
 
-1. **Feu d’artifice** : plusieurs lignes en étoile, couleurs et positions aléatoires
-2. **Pluie de carrés** : petits carrés colorés partout sur l’écran
+1. **Défi mandala** : faire une forme complexe avec des boucles imbriquées en variant, les formes, les couleurs, ...
 
 ***
 

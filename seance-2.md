@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Séance 2
 
 ## Exercices sur les tests

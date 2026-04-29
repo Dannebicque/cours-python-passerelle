@@ -93,4 +93,4 @@ Demander à l'utilisateur de saisir 5 valeurs, les ajouter dans une liste et aff
 
 ### Exercice
 
-Demander à l'utilisateur de saisir 5 valeurs, les ajouter dans une liste et afficher cette liste. Inverser les éléments de cette liste et afficher le résultat.
+Demander à l'utilisateur de saisir 5 valeurs, les ajouter dans une liste et afficher cette liste et calculer la moyenne des valeurs de la liste

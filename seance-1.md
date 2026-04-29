@@ -74,7 +74,7 @@ Pour chaque exercice, écrire l'algorigramme, et coder en python
 ```python
 for i in range(1, 11):
     resultat = i * 7
-    print(str(i) + " x 7 = " + str(resultat))
+    print(i, " x 7 = ", resultat)
 ```
 
 1. Ecrire une boucle qui affiche 100 fois « Je comprends l’algorithmie »​
@@ -93,7 +93,7 @@ max = int(input("Saisissez un nombre"))
 for i in range(0, max + 1):
     total = total + i
 
-print("Le résultat est : "+str(total))
+print("Le résultat est : ", total)
 ```
 
 ## Exercices

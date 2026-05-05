@@ -2,9 +2,9 @@
 hidden: true
 ---
 
-# Exercices Notés - 24/05
+# Exercices Notés - 07/05
 
-## Exercices notés / Séance du 24 mai
+## Exercices notés / Séance du 07 mai
 
 ### Exercices évalués
 

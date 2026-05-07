@@ -189,11 +189,15 @@ def up():
 screen = turtle.Screen()
 screen.listen()
 screen.onkey(up, "Up")  # quand on appuie sur flèche haut
+
+# Boucle
+screen.mainloop()
 ```
 
 ***
 
 ### Exercices :
 
-1. **Labyrinthe simple** : bouger la tortue pour l’amener à la sortie
+1. **Déplacer la tortue dans les différentes directions**
 2. **Attraper les étoiles** : déplacer une tortue pour rejoindre un point aléatoire
+3. **Labyrinthe simple** : bouger la tortue pour l’amener à la sortie

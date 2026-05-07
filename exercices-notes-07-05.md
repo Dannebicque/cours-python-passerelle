@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Exercices Notés - 07/05
 
 ## Exercices notés / Séance du 07 mai
